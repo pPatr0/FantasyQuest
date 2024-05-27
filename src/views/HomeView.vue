@@ -99,7 +99,21 @@
             </div>
         </div>
     </div>
-  
+    <div class="bg-[#7A4686] py-16">
+      <div class="mx-auto ">
+        <div>
+          <h2 class="text-4xl text-center text-white uppercase">Characters</h2>
+        </div>
+        <div class="flex space-x-8">
+          <div class="bg-black w-[20rem] h-[20rem]">a</div>
+          <div class="bg-black w-[20rem] h-[20rem]">a</div>
+          <div class="bg-black w-[20rem] h-[20rem]">a</div>
+          <div class="bg-black w-[20rem] h-[20rem]">a</div>
+          <div class="bg-black w-[20rem] h-[20rem]">a</div>
+          <div class="bg-black w-[20rem] h-[20rem]">a</div>
+        </div>
+      </div>
+    </div>
 
   </main>
 </template>
