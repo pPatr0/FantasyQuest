@@ -7,10 +7,10 @@
                 <a href="#">Contact</a>
             </ul>
             <div class="absolute right-0">
-            <a href="#" class="pb-2 btn">
-                BUY TICKET
-            </a>
-        </div>
+                <a href="#" class="pb-2 btn">
+                    BUY TICKET
+                </a>
+            </div>
         </div>
     </nav>
 </template>
