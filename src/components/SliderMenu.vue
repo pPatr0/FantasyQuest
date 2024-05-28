@@ -1,53 +1,47 @@
 <template>
-    <div class="bg-[#7A4686] py-16">
-      <div class="container mx-auto">
+    <div class="relative py-20 overflow-hidden carousel bg-[#7A4686]">
         <div>
-          <h2 class="pt-4 pb-16 text-4xl text-center text-white uppercase">Characters</h2>
+            <h2 class="pb-12 text-4xl text-center text-white uppercase">Characters</h2>
+         </div>
+        <div class="flex justify-center carousel-inner">
+            <div class="carousel-item bg-black w-[300px] h-[300px] mx-10"></div>
+            <div class="carousel-item bg-primary w-[300px] h-[300px] mx-10"></div>
+            <div class="carousel-item bg-secondary w-[300px] h-[300px] mx-10"></div>
+            <div class="carousel-item bg-black w-[300px] h-[300px] hidden mx-10"></div>
+            <div class="carousel-item bg-black w-[300px] h-[300px]  hidden mx-10"></div>
+            <div class="carousel-item bg-secondary w-[300px] h-[300px]  hidden mx-10"></div>
         </div>
-        <swiper :slides-per-view="3" :space-between="30" pagination navigation>
-          <swiper-slide>
-            <div class="bg-black w-[20rem] h-[20rem]"></div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="bg-secondary w-[20rem] h-[20rem]"></div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="bg-primary w-[20rem] h-[20rem]"></div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="bg-primary w-[20rem] h-[20rem]"></div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="bg-secondary w-[20rem] h-[20rem]"></div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="bg-white w-[20rem] h-[20rem]"></div>
-          </swiper-slide>
-        </swiper>
-      </div>
+        <div class="flex justify-center pt-12 space-x-4">
+            <button class="px-4 py-2 transform -translate-y-1/2 bg-white rounded-lg carousel-control prev">
+                &lt;
+            </button>
+            <button class="px-4 py-2 transform -translate-y-1/2 bg-white rounded-lg carousel-control next">
+                &gt;
+            </button>
+        </div>
     </div>
-  </template>
-  
-  <script>
-  import { Swiper, SwiperSlide } from 'swiper/vue';
-  
-  import 'swiper/css';
-  
-  
-  export default {
-    name: 'CarouselComponent',
-    components: {
-      Swiper,
-      SwiperSlide
-    }
-  };
-  </script>
-  
-  <style scoped>
-  .swiper-slide {
+</template>
+
+<style>
+.carousel {
+    overflow: hidden;
+}
+
+.carousel-inner {
     display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  </style>
-  
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+}
+
+.carousel-control {
+    cursor: pointer;
+}
+
+.prev, .next {
+    top: 50%;
+    transform: translateY(-50%);
+}
+</style>

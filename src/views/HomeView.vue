@@ -109,6 +109,55 @@
 </template>
 
 <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const prevButton = document.querySelector('.carousel-control.prev');
+    const nextButton = document.querySelector('.carousel-control.next');
+    const carouselItems = document.querySelectorAll('.carousel-item');
+    let currentIndex = 0;
+
+    for (let i = 0; i < 3; i++) {
+        carouselItems[i].classList.remove('hidden');
+    }
+
+    prevButton.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            carouselItems[currentIndex + 2].classList.add('hidden');
+            currentIndex--;
+            for (let i = currentIndex; i < currentIndex + 3; i++) {
+                carouselItems[i].classList.remove('hidden');
+            }
+        } else {
+            for (let i = 0; i < carouselItems.length; i++) {
+                carouselItems[i].classList.add('hidden');
+            }
+            currentIndex = carouselItems.length - 3;
+            for (let i = currentIndex; i < currentIndex + 3; i++) {
+                carouselItems[i].classList.remove('hidden');
+            }
+        }
+    });
+
+    nextButton.addEventListener('click', () => {
+        if (currentIndex < carouselItems.length - 3) {
+            for (let i = currentIndex; i < currentIndex + 3; i++) {
+                carouselItems[i].classList.add('hidden');
+            }
+            currentIndex++;
+            for (let i = currentIndex; i < currentIndex + 3; i++) {
+                carouselItems[i].classList.remove('hidden');
+            }
+        } else {
+            for (let i = 0; i < carouselItems.length; i++) {
+                carouselItems[i].classList.add('hidden');
+            }
+            currentIndex = 0;
+            for (let i = currentIndex; i < currentIndex + 3; i++) {
+                carouselItems[i].classList.remove('hidden');
+            }
+        }
+    });
+});
+
 import { ref } from 'vue';
 import NavbarMenu from '../components/NavbarMenu.vue'
 import SliderMenu from '../components/SliderMenu.vue'
