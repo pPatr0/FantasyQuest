@@ -158,6 +158,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
+
 import { ref } from 'vue';
 import NavbarMenu from '../components/NavbarMenu.vue'
 import SliderMenu from '../components/SliderMenu.vue'
