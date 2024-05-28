@@ -7,7 +7,7 @@
                         <img src="/images/dragon.png" alt="Dragon" class="w-auto h-[16rem]">
                     </div>
                 </div>
-                <div class="lg:flex justify-self-end justify-between pb-6 md:grid md:grid-rows-1 md:gap-y-12 lg:space-y-0 space-y-6 w-[38rem]">
+                <div class="justify-between pb-6 space-y-6 lg:flex md:grid md:grid-rows-1 md:gap-y-12 lg:space-y-0 ">
                     <ul class="w-1/2 space-y-2 font-bold text-white lg:mt-0 md:mt-4">
                         <li>
                             <a href="#" class="font-bold text-white inter">Address</a>
@@ -29,7 +29,6 @@
                         </li>
                     </ul>
                     <ul class="space-y-2 font-bold text-white inter">
-                        
                         <div class="grid grid-cols-2 font-extralight">
                             <ul class="space-y-2">
                                 <li class="font-bold inter">Event Date</li>

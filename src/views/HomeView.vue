@@ -7,13 +7,13 @@
         </video>
     </div> -->
     <div class="bg-[url('/images/hero_fixed.png')] w-full h-[100vh] bg-cover bg-no-repeat bg-center relative">
-        <div class="container mx-auto">
+        <div class="mx-auto lg:container">
           <NavbarMenu />
-            <div class="flex flex-col items-center text-[#FFFFFF] pt-[12rem]">
-                <h1 class="z-50 text-8xl">
+            <div class="flex flex-col text-center items-center text-[#FFFFFF] pt-[12rem]">
+                <h1 class="z-50 text-5xl lg:text-8xl">
                     <span class="text-shadow">Fantasy Quest</span>
                 </h1>
-                <p class="pt-20 text-3xl">
+                <p class="pt-10 text-2xl lg:pt-20">
                     Explore fantasy world on your own
                 </p>
                 <div class="flex pt-8 space-x-4">
@@ -33,24 +33,24 @@
     </div>
     <div class="bg-[#002B59] py-12" id="about">
         <div class="container mx-auto">
-            <div class="pt-16 pb-24">
+            <div class="pb-12 lg:pb-24 lg:pt-16 pt-1/2">
                 <h2 class="flex justify-center text-4xl text-white uppercase">About Quest</h2>
             </div>
-            <div class="flex justify-center space-x-12">
-                <div class="">
-                    <iframe class="w-[70vh] h-[40vh]" src="https://www.youtube.com/embed/bk8Rl-tSxUQ?si=InljYER4wZKrGcSI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="flex flex-col items-center justify-center px-2 space-x-0 lg:space-x-8 lg:flex-row">
+                <div class="flex justify-center">
+                    <iframe class="lg:w-[70vh] md:w-[55vh] w-[50vh] h-[20vh] lg:h-[39vh]" src="https://www.youtube.com/embed/bk8Rl-tSxUQ?si=InljYER4wZKrGcSI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <div class="max-w-sm">
-                    <p class="text-xl font-semibold text-white inter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget purus non urna vestibulum commodo a vitae nulla. Phasellus a pellentesque magna, eget varius metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque ac turpis enim. Nulla luctus et eros ac blandit. In mattis purus et accumsan tincidunt. Praesent fringilla viverra porttitor.tincidunt. Praesent fringilla viverra porttitor.</p>
+                <div class="flex justify-center max-w-lg px-6 pt-6 lg:max-w-sm lg:px-0 lg:pt-0">
+                    <p class="text-white text-md md:text-lg lg:text-xl inter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget purus non urna vestibulum commodo a vitae nulla. Phasellus a pellentesque magna, eget varius metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque ac turpis enim. Nulla luctus et eros ac blandit. In mattis purus et accumsan tincidunt. Praesent fringilla viverra porttitor.tincidunt. Praesent fringilla viverra porttitor.</p>
                 </div>
             </div>
         </div>
         <div class="flex justify-center">
-            <img src="/images/divider.png" alt="Lemovani" class="h-auto w-[90%]">
+            <img src="/images/divider.png" alt="Lemovani" class="h-auto lg:w-[90%] md:w-[70%]">
         </div>
         <div class="container flex justify-center mx-auto">
             <div class="flex justify-center w-auto py-5 bg-white rounded-lg">
-                <div class="flex px-5 space-x-4">
+                <div class="flex flex-col px-5 space-x-0 lg:pace-x-4 lg:flex-row">
                     <div class="uppercase">
                         <button @click="selectedCategory = 'Day' " class="btn text-[#002B59] btn-second border-0 px-2" :class="{'btn-switch' : selectedCategory === 'Night', 'btn-second': selectedCategory === 'Day' }">
                             Day quest
@@ -64,39 +64,39 @@
                 </div>
             </div>
         </div>
-        <div class="container flex justify-center pt-24 mx-auto">
-          <div v-if="selectedCategory === 'Day'" class="border-2 border-white bg-[#4EB4D5] w-[30rem] text-[#002B59] rounded-lg">
-              <div class="flex flex-col items-center px-16 text-xl">
-                <h2 class="pt-12 text-3xl uppercase">
-                  Day quest
-                </h2>
-                <p class="py-8 inter">
-                  <span class="text-4xl font-semibold inter">159</span>dkk / group
-                </p>
-                <p class="inter">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget purus non urna vestibulum commodo a vitae nulla. Phasellus a pellentesque magna, eget varius metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque ac turpis enim. Nulla luctus et eros ac blandit.
-                </p>
-                <a href="#" class="pb-2 my-8 btn">
-                  BUY TICKET
-                </a>
-              </div>
+        <div class="container flex justify-center pt-12 mx-auto lg:pt-24">
+          <div v-if="selectedCategory === 'Day'" class="border-2 border-white bg-[#4EB4D5] lg:w-[30rem] w-[20rem] text-[#002B59] rounded-lg">
+            <div class="flex flex-col items-center px-8 text-xl lg:px-16">
+              <h2 class="pt-12 text-2xl uppercase md:text-3xl lg:text-3xl">
+                Day quest
+              </h2>
+              <p class="py-8 inter">
+                <span class="text-3xl font-semibold lg:text-4xl inter">159</span>dkk / group
+              </p>
+              <p class="text-base lg:text-lg inter">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget purus non urna vestibulum commodo a vitae nulla. Phasellus a pellentesque magna, eget varius metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque ac turpis enim. Nulla luctus et eros ac blandit.
+              </p>
+              <a href="#" class="pb-2 my-8 btn">
+                BUY TICKET
+              </a>
             </div>
-            <div v-if="selectedCategory === 'Night'" class="border-2 border-white bg-[#002B59] w-[30rem] text-white rounded-lg">
-              <div class="flex flex-col items-center px-16 text-xl">
-                <h2 class="pt-12 text-3xl uppercase">
-                  Night quest
-                </h2>
-                <p class="py-8 inter">
-                  <span class="text-4xl font-semibold inter">243</span>dkk / group
-                </p>
-                <p class="inter">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget purus non urna vestibulum commodo a vitae nulla. Phasellus a pellentesque magna, eget varius metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque ac turpis enim. Nulla luctus et eros ac blandit.
-                </p>
-                <a href="#" class="btn text-[#002B59] pb-2 btn-second my-8">
-                  BUY TICKET
-                </a>
-              </div>
+          </div>
+          <div v-if="selectedCategory === 'Night'" class="border-2 border-white bg-[#002B59] lg:w-[30rem] w-[20rem] text-white rounded-lg">
+            <div class="flex flex-col items-center px-8 text-xl lg:px-16">
+              <h2 class="pt-12 text-2xl uppercase md:text-3xl lg:text-3xl">
+                Night quest
+              </h2>
+              <p class="py-8 inter">
+                <span class="text-3xl font-semibold lg:text-4xl inter">243</span>dkk / group
+              </p>
+              <p class="text-base lg:text-lg inter">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget purus non urna vestibulum commodo a vitae nulla. Phasellus a pellentesque magna, eget varius metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque ac turpis enim. Nulla luctus et eros ac blandit.
+              </p>
+              <a href="#" class="btn text-[#002B59] pb-2 btn-second my-8">
+                BUY TICKET
+              </a>
             </div>
+          </div>
         </div>
     </div>
     <div class="pt-20 bg-primary">
@@ -105,9 +105,9 @@
 
     <SliderMenu />
 
-    <div class="bg-[#7A4686] py-16">
+    <div class="bg-[#7A4686] lg:py-16 py-0">
       <div class="container flex justify-center mx-auto">
-        <div class="bg-[#002B59] border-2 border-white rounded flex text-white max-w-3xl items-center p-8">
+        <div class="bg-[#002B59] border-2 border-white rounded flex lg:flex-row md:flex-row flex-col text-white lg:max-w-3xl max-w-xs items-center p-8">
           <div class="space-y-6">
             <h2 class="text-xl uppercase">
               Visit us
@@ -116,7 +116,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget purus non urna vestibulum commodo a vitae nulla. Phasellus a pellentesque magna, eget varius metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque ac turpis enim. Nulla luctus et eros ac blandit.
             </p>
           </div>
-          <div>
+          <div class="pt-6 lg:pt-0 md:pt-0">
             <img src="/images/portal.png" alt="Portal" class="w-[90%]">
           </div>
         </div>
@@ -124,11 +124,25 @@
       <SponsorMenu />
     </div>
 
-    <FooterMenu />
+    <FooterMenu/>
   </main>
 </template>
 
 <script>
+document.addEventListener("DOMContentLoaded", function () {
+            var navbar = document.getElementById("navbar");
+            var toggleButton = document.getElementById("toggleButton");
+            var navbarContent = document.getElementById("navbarContent");
+            var navbarButton = document.getElementById("navbarButton");
+
+            toggleButton.addEventListener("click", toggleNavbar);
+
+            function toggleNavbar() {
+                navbarContent.classList.toggle("!block");
+                navbarButton.classList.toggle("!block");
+            }
+        });
+
 document.addEventListener("DOMContentLoaded", function() {
     const prevButton = document.querySelector('.carousel-control.prev');
     const nextButton = document.querySelector('.carousel-control.next');
@@ -300,6 +314,70 @@ export default {
 .btn-switch{
   background: #002B59;
   color: #FFFFFF;
+}
+
+@media (max-width: 991.98px) {
+.btn {
+    background: #002B59;
+    color: #FFFFFF;
+    border: solid 2px #FFFFFF;
+
+    text-decoration: none;
+    width: 20vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 18px;
+    padding-bottom: 8px;
+    padding-inline: 2px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    cursor: pointer;
+    overflow: hidden;
+    transition-delay: 0s !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px;
+  }
+  .btn::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: #EAD000;
+    z-index: -1;
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .btn:hover::before {
+    width: 100%;
+    left: 0;
+    right: unset;
+  }
+  .btn:hover {
+    box-shadow: 0 0 #ffe00b, 0 0 #151515;
+    color: white;
+  }
+
+  .inter{
+    font-family: 'Inter', sans-serif;
+  }
+
+  .btn-second{
+  background-color: #4EB4D5;
+  color:#002B59;
+}
+
+.btn-switch{
+  background: #002B59;
+  color: #FFFFFF;
+}
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');

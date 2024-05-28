@@ -4,29 +4,29 @@
             <h2 class="pb-12 text-4xl text-center text-white uppercase">Characters</h2>
          </div>
         <div class="flex justify-center text-xl text-white carousel-inner">
-            <div class="carousel-item w-[300px] h-[300px] mx-10 text-center">
+            <div class="carousel-item w-[300px] h-[300px] lg:mx-10 mx-[20rem] text-center">
                 <h2 class="pb-2">Arkivaren</h2>
-                <img src="/images/arkivaren.png" alt="" class="border-2 border-white rounded">
+                <img src="/images/arkivaren.png" alt="Arkivaren" class="border-2 border-white rounded">
             </div>
-            <div class="carousel-item w-[300px] h-[300px] mx-10 text-center">
+            <div class="carousel-item w-[300px] h-[300px] lg:mx-10 mx-[20rem] text-center">
                 <h2 class="pb-2">Gnist</h2>
-                <img src="/images/gnist.png" alt="" class="border-2 border-white rounded">
+                <img src="/images/gnist.png" alt="Gnist" class="border-2 border-white rounded">
             </div>
-            <div class="carousel-item w-[300px] h-[300px] mx-10 text-center">
+            <div class="carousel-item w-[300px] h-[300px] lg:mx-10 mx-[20rem] text-center">
                 <h2 class="pb-2">Gygaz</h2>
-                <img src="/images/gygaz.png" alt="" class="border-2 border-white rounded">
+                <img src="/images/gygaz.png" alt="Gygaz" class="border-2 border-white rounded">
             </div>
-            <div class="carousel-item w-[300px] h-[300px] hidden mx-10 text-center">
+            <div class="carousel-item w-[300px] h-[300px] hidden lg:mx-10 mx-[20rem] text-center">
                 <h2 class="pb-2">Havfruedronning</h2>
-                <img src="/images/havfruedronning.png" alt="" class="border-2 border-white rounded">
+                <img src="/images/havfruedronning.png" alt="Havfruedronning" class="border-2 border-white rounded">
             </div>
-            <div class="carousel-item w-[300px] h-[300px]  hidden mx-10 text-center">
+            <div class="carousel-item w-[300px] h-[300px]  hidden lg:mx-10 mx-[20rem] text-center">
                 <h2 class="pb-2">Malice</h2>
-                <img src="/images/malice.png" alt="" class="border-2 border-white rounded">
+                <img src="/images/malice.png" alt="Malice" class="border-2 border-white rounded">
             </div>
-            <div class="carousel-item w-[300px] h-[300px]  hidden mx-10 text-center">
+            <div class="carousel-item w-[300px] h-[300px]  hidden lg:mx-10 mx-[20rem] text-center">
                 <h2 class="pb-2">Vogterk</h2>
-                <img src="/images/vogterk.png" alt="" class="border-2 border-white rounded">
+                <img src="/images/vogterk.png" alt="Vogterk" class="border-2 border-white rounded">
             </div>
         </div>
         <div class="flex justify-center pt-12 mt-12">
