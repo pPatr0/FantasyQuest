@@ -105,6 +105,26 @@
 
     <SliderMenu />
 
+    <div class="bg-[#7A4686] py-16">
+      <div class="container flex justify-center mx-auto">
+        <div class="bg-[#002B59] border-2 border-white rounded flex text-white max-w-3xl items-center p-8">
+          <div class="space-y-6">
+            <h2 class="text-xl uppercase">
+              Visit us
+            </h2>
+            <p class="max-w-xl inter">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget purus non urna vestibulum commodo a vitae nulla. Phasellus a pellentesque magna, eget varius metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque ac turpis enim. Nulla luctus et eros ac blandit.
+            </p>
+          </div>
+          <div>
+            <img src="/images/portal.png" alt="Portal" class="w-[90%]">
+          </div>
+        </div>
+      </div>
+      <SponsorMenu />
+    </div>
+
+    <FooterMenu />
   </main>
 </template>
 
@@ -163,11 +183,15 @@ document.addEventListener("DOMContentLoaded", function() {
 import { ref } from 'vue';
 import NavbarMenu from '../components/NavbarMenu.vue'
 import SliderMenu from '../components/SliderMenu.vue'
+import SponsorMenu from '../components/SponsorMenu.vue'
+import FooterMenu from '../components/FooterMenu.vue'
 
 export default {
   components: {
     NavbarMenu,
-    SliderMenu
+    SliderMenu,
+    SponsorMenu,
+    FooterMenu
   },
   setup() {
     const selectedCategory = ref('Day');
