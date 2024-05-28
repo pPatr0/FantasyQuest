@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[#272729] pt-20 pb-6 lg:px-8 md:px-8 px-0">
+    <div class="px-0 pt-20 pb-6 bg-primary lg:px-8 md:px-8">
         <div class="container mx-auto">
             <div class="flex flex-col justify-between px-8 lg:flex-row">
                 <div>
@@ -10,49 +10,47 @@
                 <div class="lg:flex justify-self-end justify-between pb-6 md:grid md:grid-rows-1 md:gap-y-12 lg:space-y-0 space-y-6 w-[38rem]">
                     <ul class="w-1/2 space-y-2 font-bold text-white lg:mt-0 md:mt-4">
                         <li>
-                            <a href="#" class="font-bold text-white">Adress</a>
+                            <a href="#" class="font-bold text-white inter">Address</a>
                         </li>
                         <li>
-                            <p class="font-extralight">Trapholt</p>
+                            <p class="font-extralight inter">Fantasy Quest</p>
                         </li>
                         <li>
-                            <p class="font-extralight">Æblehaven 23</p>
+                            <p class="font-extralight inter">Torvet</p>
                         </li>
                         <li>
-                            <p class="font-extralight">6000 Kolding</p>
+                            <p class="font-extralight inter">6700 Esbjerg</p>
                         </li>
                         <li class="pt-3">
-                            <a href="#" class="font-bold text-white">Telefon</a>
+                            <a href="#" class="font-bold text-white inter">Phone</a>
                         </li>
                         <li>
-                            <p class="font-extralight">+45 76 30 05 30</p>
+                            <p class="font-extralight inter">+45 76 16 20 00</p>
                         </li>
                     </ul>
-                    <ul class="space-y-2 font-bold text-white">
-                        <li>
-                            <a href="#" class="font-bold text-white">Opening hours</a>
-                        </li>
+                    <ul class="space-y-2 font-bold text-white inter">
+                        
                         <div class="grid grid-cols-2 font-extralight">
                             <ul class="space-y-2">
-                                <li>Mon</li>
-                                <li>Tue-Sun</li>
-                                <li>Wed</li>
+                                <li class="font-bold inter">Event Date</li>
+                                <li class="inter">Day Quest</li>
+                                <li class="inter">Night Quest</li>
                                 <li class="pt-3">
-                                    <a href="#" class="font-bold text-white">Email</a>
+                                    <a href="#" class="font-bold text-white inter">Email</a>
                                 </li>
                                 <li>
-                                    <p class="font-extralight">kunstmuseum@trapholt.dk</p>
+                                    <p class="font-extralight inter">fantasyfestival@esbjerg.dk</p>
                                 </li>
                             </ul>
                             <ul class="space-y-2 lg:ml-0 md:ml-0">
-                                <li>Closed</li>
-                                <li>10.00 - 17.00</li>
-                                <li>10.00 - 21.00</li>
+                                <li class="font-bold inter">14.09.2024</li>
+                                <li class="inter">10.00 - 14.30</li>
+                                <li class="inter">18.00 - 22.30</li>
                             </ul>
                         </div>
                     </ul>
                     <ul class="space-y-2">
-                        <a href="#" class="font-bold text-white">Follow us</a>
+                        <a href="#" class="font-bold text-white inter">Follow us</a>
                         <div class="flex">
                             <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="stroke-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M16.5 7.5l0 .01" /></svg>
@@ -74,7 +72,7 @@
                 </div>
             </div>
             <hr class="pb-4 mt-6 border-white"/>
-            <span class="block mt-2 text-sm text-center text-white opacity-50">
+            <span class="block mt-2 text-sm text-center text-white opacity-80">
                 © 2024 Fantasy Quest
             </span>
         </div>
