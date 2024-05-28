@@ -29,12 +29,12 @@
                 <img src="/images/vogterk.png" alt="" class="border-2 border-white rounded">
             </div>
         </div>
-        <div class="flex justify-center pt-12 mt-12 space-x-4">
-            <button class="px-4 py-2 transform -translate-y-1/2 bg-white rounded-lg carousel-control prev">
-                &lt;
+        <div class="flex justify-center pt-12 mt-12">
+            <button class="flex justify-center -mr-4 transform carousel-control prev">
+                <img src="/images/arrow.png" alt="Arrow" class="w-1/2 rotate-180">
             </button>
-            <button class="px-4 py-2 transform -translate-y-1/2 bg-white rounded-lg carousel-control next">
-                &gt;
+            <button class="flex justify-center -ml-4 transform carousel-control next">
+                <img src="/images/arrow.png" alt="Arrow" class="w-1/2">
             </button>
         </div>
     </div>
