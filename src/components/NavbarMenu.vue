@@ -12,11 +12,11 @@
                 <ul class="flex flex-col mt-2 space-x-0 space-y-2 text-lg text-center lg:text-xl lg:space-y-0 lg:space-x-12 lg:flex-row">
                     <a href="#">Home</a>
                     <a href="#about">About</a>
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                 </ul>
             </div>
             <div id="navbarButton" class="relative hidden pt-4 pb-2 lg:pt-0 lg:pb-0 lg:block lg:absolute lg:right-0">
-                <a class="pb-2 btn">
+                <a class="pb-2 btn buy-ticket">
                     Buy Ticket
                 </a>
             </div>

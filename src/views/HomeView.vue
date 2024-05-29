@@ -1,11 +1,10 @@
 <template>
   <main>
-    
-    <!-- <div id="preloader" class="flex items-center justify-center w-0 h-0 bg-gray-800 lg:h-full lg:w-full">
+    <div id="preloader" class="items-center justify-center invisible hidden w-0 h-0 bg-gray-800 lg:h-full lg:w-full lg:flex lg:visible">
         <video id="preloader-video" class="object-cover video" autoplay loop muted>
-          <source src="img/LoaderFantasyQuest.mp4" type="video/mp4">
+          <source src="/images/LoaderFantasyQuest.mp4" type="video/mp4">
         </video>
-    </div> -->
+    </div>
     <div class="bg-[url('/images/hero_fixed.png')] w-full h-[100vh] bg-cover bg-no-repeat bg-center relative">
         <div class="mx-auto lg:container">
           <NavbarMenu />
@@ -23,7 +22,7 @@
                         </a>
                     </div>
                     <div class="">
-                        <a href="#" class="pb-2 btn">
+                        <a href="#" class="pb-2 btn buy-ticket">
                             BUY TICKET
                         </a>
                     </div>
@@ -38,7 +37,7 @@
             </div>
             <div class="flex flex-col items-center justify-center px-2 space-x-0 lg:space-x-8 lg:flex-row">
                 <div class="flex justify-center">
-                    <iframe class="lg:w-[70vh] md:w-[55vh] w-[50vh] h-[20vh] lg:h-[39vh]" src="https://www.youtube.com/embed/bk8Rl-tSxUQ?si=InljYER4wZKrGcSI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="lg:w-[70vh] md:w-[55vh] w-[40vh] h-[20vh] lg:h-[39vh]" src="https://www.youtube.com/embed/bk8Rl-tSxUQ?si=InljYER4wZKrGcSI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="flex justify-center max-w-lg px-6 pt-6 lg:max-w-sm lg:px-0 lg:pt-0">
                     <p class="text-white text-md md:text-lg lg:text-xl inter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget purus non urna vestibulum commodo a vitae nulla. Phasellus a pellentesque magna, eget varius metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque ac turpis enim. Nulla luctus et eros ac blandit. In mattis purus et accumsan tincidunt. Praesent fringilla viverra porttitor.tincidunt. Praesent fringilla viverra porttitor.</p>
@@ -52,12 +51,12 @@
             <div class="flex justify-center w-auto py-5 bg-white rounded-lg">
                 <div class="flex flex-col px-5 space-x-0 lg:pace-x-4 lg:flex-row">
                     <div class="uppercase">
-                        <button @click="selectedCategory = 'Day' " class="btn text-[#002B59] btn-second border-0 px-2" :class="{'btn-switch' : selectedCategory === 'Night', 'btn-second': selectedCategory === 'Day' }">
+                        <button @click="selectedCategory = 'Day' " class="btn-nothing text-[#002B59] btn-second border-0 px-2" :class="{'btn-switch' : selectedCategory === 'Night', 'btn-second': selectedCategory === 'Day' }">
                             Day quest
                         </button>
                     </div>
                     <div class="uppercase">
-                        <button @click="selectedCategory = 'Night' " class="px-2 pb-2 border-0 btn" :class="{'btn-switch' : selectedCategory === 'Day', 'btn-second': selectedCategory === 'Night' }">
+                        <button @click="selectedCategory = 'Night' " class="px-2 pb-2 border-0 btn-nothing" :class="{'btn-switch' : selectedCategory === 'Day', 'btn-second': selectedCategory === 'Night' }">
                             Night quest
                         </button>
                     </div>
@@ -76,7 +75,7 @@
               <p class="text-base lg:text-lg inter">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget purus non urna vestibulum commodo a vitae nulla. Phasellus a pellentesque magna, eget varius metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque ac turpis enim. Nulla luctus et eros ac blandit.
               </p>
-              <a href="#" class="pb-2 my-8 btn">
+              <a href="#" class="pb-2 my-8 btn-nothing">
                 BUY TICKET
               </a>
             </div>
@@ -105,9 +104,9 @@
 
     <SliderMenu />
 
-    <div class="bg-[#7A4686] lg:py-16 py-0">
+    <div class="bg-[#7A4686] lg:pb-16">
       <div class="container flex justify-center mx-auto">
-        <div class="bg-[#002B59] border-2 border-white rounded flex lg:flex-row md:flex-row flex-col text-white lg:max-w-3xl max-w-xs items-center p-8">
+        <div class="bg-[#002B59] border-2 border-white rounded flex lg:flex-row md:flex-row flex-col justify-center text-white lg:max-w-3xl max-w-xs items-center p-8">
           <div class="space-y-6">
             <h2 class="text-xl uppercase">
               Visit us
@@ -116,7 +115,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget purus non urna vestibulum commodo a vitae nulla. Phasellus a pellentesque magna, eget varius metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque ac turpis enim. Nulla luctus et eros ac blandit.
             </p>
           </div>
-          <div class="pt-6 lg:pt-0 md:pt-0">
+          <div class="flex justify-center pt-6 lg:pt-0 md:pt-0">
             <img src="/images/portal.png" alt="Portal" class="w-[90%]">
           </div>
         </div>
@@ -129,6 +128,17 @@
 </template>
 
 <script>
+document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+            preloader.style.opacity = 0;
+        }, 3430);
+
+        setTimeout(() => {
+            preloader.style.display = "none";
+        }, 3730);
+
+    });
+
 document.addEventListener("DOMContentLoaded", function () {
             var navbar = document.getElementById("navbar");
             var toggleButton = document.getElementById("toggleButton");
@@ -219,8 +229,6 @@ export default {
 
 </script>
 <style lang="scss">
-
-
 #preloader {
   display: flex;
   align-items: center;
@@ -240,6 +248,7 @@ export default {
   height: 100%;
   object-fit: cover;
 }
+
 
 @font-face {
     font-family: myFont;
@@ -288,9 +297,37 @@ export default {
     right: 0;
     width: 0%;
     height: 100%;
-    background: #EAD000;
+    background: #002B59;
     z-index: -1;
     transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  
+  .btn-nothing{
+    background: #002B59;
+    color: #FFFFFF;
+    border: solid 2px #FFFFFF;
+
+    text-decoration: none;
+    width: 20vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 18px;
+    padding-bottom: 8px;
+    padding-inline: 2px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    cursor: pointer;
+    overflow: hidden;
+    transition-delay: 0s !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px;
   }
   .btn:hover::before {
     width: 100%;
@@ -300,6 +337,14 @@ export default {
   .btn:hover {
     box-shadow: 0 0 #ffe00b, 0 0 #151515;
     color: white;
+  }
+
+  .buy-ticket::before{
+    background-color: #4EB4D5;
+  }
+
+  .buy-ticket:hover{
+    color:#002B59;
   }
 
   .inter{
@@ -378,6 +423,12 @@ export default {
   background: #002B59;
   color: #FFFFFF;
 }
+}
+
+@media (max-width:500px){
+  .btn{
+    font-size:10px;
+  }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');

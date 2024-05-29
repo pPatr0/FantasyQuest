@@ -4,7 +4,7 @@
             <div class="flex flex-col justify-between px-8 lg:flex-row">
                 <div>
                     <div class="flex">
-                        <img src="/images/dragon.png" alt="Dragon" class="w-auto h-[16rem]">
+                        <img src="/images/dragon.png" alt="Dragon" class="w-auto h-[16rem] " id="contact">
                     </div>
                 </div>
                 <div class="justify-between pb-6 space-y-6 lg:flex md:grid md:grid-rows-1 md:gap-y-12 lg:space-y-0 ">
@@ -34,7 +34,7 @@
                                 <li class="font-bold inter">Event Date</li>
                                 <li class="inter">Day Quest</li>
                                 <li class="inter">Night Quest</li>
-                                <li class="pt-3">
+                                <li class="lg:pt-[2.95rem] pt-2">
                                     <a href="#" class="font-bold text-white inter">Email</a>
                                 </li>
                                 <li>
