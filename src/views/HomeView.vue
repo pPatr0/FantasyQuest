@@ -22,7 +22,7 @@
                         </a>
                     </div>
                     <div class="">
-                        <a href="#" class="pb-2 btn buy-ticket">
+                        <a href="#buyticket" class="pb-2 btn buy-ticket">
                             BUY TICKET
                         </a>
                     </div>
@@ -35,17 +35,21 @@
             <div class="pb-12 lg:pb-24 lg:pt-16 pt-1/2">
                 <h2 class="flex justify-center text-4xl text-white uppercase">About Quest</h2>
             </div>
-            <div class="flex flex-col items-center justify-center px-2 space-x-0 lg:space-x-8 lg:flex-row">
-                <div class="flex justify-center">
-                    <iframe class="lg:w-[70vh] md:w-[55vh] w-[40vh] h-[20vh] lg:h-[39vh]" src="https://www.youtube.com/embed/bk8Rl-tSxUQ?si=InljYER4wZKrGcSI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="flex justify-center max-w-lg px-6 pt-6 lg:max-w-sm lg:px-0 lg:pt-0">
-                    <p class="text-white text-md md:text-lg lg:text-xl inter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget purus non urna vestibulum commodo a vitae nulla. Phasellus a pellentesque magna, eget varius metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque ac turpis enim. Nulla luctus et eros ac blandit. In mattis purus et accumsan tincidunt. Praesent fringilla viverra porttitor.tincidunt. Praesent fringilla viverra porttitor.</p>
-                </div>
+            <div class="flex justify-center px-6">
+              <div id="slides" class="flex flex-col items-center justify-center px-8 py-8 space-x-0 border-2 border-white rounded max-w-7xl lg:space-x-10 lg:flex-row bg-secondary slide">
+                  <div class="flex justify-center ">
+                      <iframe class="lg:w-[70vh] md:w-[55vh] w-[45vh] h-[20vh] lg:h-[43vh]" src="https://www.youtube.com/embed/bk8Rl-tSxUQ?si=InljYER4wZKrGcSI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                  <div class="flex justify-center max-w-lg px-6 pt-6 lg:max-w-sm lg:px-0 lg:pt-0">
+                      <p class=" text-primary text-md md:text-lg lg:text-xl inter">
+                        Are you ready to enter a magical world where you are a hero on a quest to overcome evil forces and save the world? Welcome to Fantasy Quest Esbjerg. Imagine "Prisoner in the Fortress" with magic, theatre, role-playing, heroes, villains and the battle of good versus evil. This is your journey in Fantasy Quest Esbjerg. In 2024, Fantasy Quest Esbjerg will offer a challenging evening edition and a daytime edition for the whole family during the Fantasy Festival. This event, created in collaboration with youtuber Lakserytteren, is open to everyone.
+                      </p>  
+                  </div>
+              </div>
             </div>
         </div>
         <div class="flex justify-center">
-            <img src="/images/divider.png" alt="Lemovani" class="h-auto lg:w-[90%] md:w-[70%]">
+            <img src="/images/divider.png" alt="Lemovani" class="h-auto lg:w-[90%] md:w-[70%]"  id="buyticket">
         </div>
         <div class="container flex justify-center mx-auto">
             <div class="flex justify-center w-auto py-5 bg-white rounded-lg">
@@ -64,7 +68,7 @@
             </div>
         </div>
         <div class="container flex justify-center pt-12 mx-auto lg:pt-24">
-          <div v-if="selectedCategory === 'Day'" class="border-2 border-white bg-[#4EB4D5] lg:w-[30rem] w-[20rem] text-[#002B59] rounded-lg">
+          <div v-if="selectedCategory === 'Day'" class="border-2 border-white bg-[#4EB4D5] lg:w-[30rem] w-[20rem] text-[#002B59] rounded-lg ">
             <div class="flex flex-col items-center px-8 text-xl lg:px-16">
               <h2 class="pt-12 text-2xl uppercase md:text-3xl lg:text-3xl">
                 Day quest
@@ -73,14 +77,13 @@
                 <span class="text-3xl font-semibold lg:text-4xl inter">159</span>dkk / group
               </p>
               <p class="text-base lg:text-lg inter">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget purus non urna vestibulum commodo a vitae nulla. Phasellus a pellentesque magna, eget varius metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque ac turpis enim. Nulla luctus et eros ac blandit.
-              </p>
-              <a href="#" class="pb-2 my-8 btn-nothing">
+                Fantasy Quest Esbjerg is an adventure race that takes place during the Esbjerg Fantasy Festival on 14 September 2024. Participants will embark on a quest full of challenges to be completed on a route inspired by a unique fantasy story created in collaboration with Lakserytteren. <br><br> The event is divided into two segments: the Family Challenge and the Fantasy Challenge. The Daily Quest invites families to participate together. Everyone becomes a hero, with children playing a key role in saving Esbjerg. The challenges are designed for children to complete, but teamwork and skill from all participants is essential. The family version of the quest takes place during the daytime hours of the Festival of Imagination.              </p>
+              <a href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3" class="pb-2 my-8 btn-nothing">
                 BUY TICKET
               </a>
             </div>
           </div>
-          <div v-if="selectedCategory === 'Night'" class="border-2 border-white bg-[#002B59] lg:w-[30rem] w-[20rem] text-white rounded-lg">
+          <div v-if="selectedCategory === 'Night'" class="border-2 border-white bg-[#002B59] lg:w-[30rem] w-[20rem] text-white rounded-lg ">
             <div class="flex flex-col items-center px-8 text-xl lg:px-16">
               <h2 class="pt-12 text-2xl uppercase md:text-3xl lg:text-3xl">
                 Night quest
@@ -89,9 +92,9 @@
                 <span class="text-3xl font-semibold lg:text-4xl inter">243</span>dkk / group
               </p>
               <p class="text-base lg:text-lg inter">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget purus non urna vestibulum commodo a vitae nulla. Phasellus a pellentesque magna, eget varius metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque ac turpis enim. Nulla luctus et eros ac blandit.
+                Fantasy Quest Esbjerg is an adventure race that you can join during the Fantasy Festival in Esbjerg on 14 September 2024. The race includes a quest with different tasks to solve along the route, based on a unique fantasy story created in collaboration with Lakserytteren. <br><br>The event is divided into two parts: the Family Quest and the Fantasy Quest. As darkness falls over Esbjerg, the difficulty of the quest increases. Participants have to think creatively and solve challenges that require courage, teamwork and ingenuity to complete the task and save Esbjerg. You can participate in the Evening Challenge either alone or with friends.
               </p>
-              <a href="#" class="btn text-[#002B59] pb-2 btn-second my-8">
+              <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" class="btn text-[#002B59] pb-2 btn-second my-8">
                 BUY TICKET
               </a>
             </div>
@@ -104,16 +107,15 @@
 
     <SliderMenu />
 
-    <div class="bg-[#7A4686] lg:pb-16">
-      <div class="container flex justify-center mx-auto">
-        <div class="bg-[#002B59] border-2 border-white rounded flex lg:flex-row md:flex-row flex-col justify-center text-white lg:max-w-3xl max-w-xs items-center p-8">
+    <div id="slides2" class="bg-[#7A4686] lg:pb-16">
+      <div class="container flex justify-center mx-auto ">
+        <div class="bg-[#002B59] border-2 border-white rounded flex lg:flex-row md:flex-row flex-col justify-center text-white lg:max-w-3xl max-w-xs items-center p-8 slide2">
           <div class="space-y-6">
             <h2 class="text-xl uppercase">
               Visit us
             </h2>
             <p class="max-w-xl inter">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget purus non urna vestibulum commodo a vitae nulla. Phasellus a pellentesque magna, eget varius metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque ac turpis enim. Nulla luctus et eros ac blandit.
-            </p>
+              This year's Fantasy Quest Esbjerg revolves around portals through which magical characters enter our world. During your quest, you will meet these fantastic creatures and solve the challenges they bring. Each portal offers a unique adventure and mixes reality with the mystical realm. Whether you join the Family Quest during the day or the Evening Quest, prepare to go through a portal and embark on an extraordinary journey.            </p>
           </div>
           <div class="flex justify-center pt-6 lg:pt-0 md:pt-0">
             <img src="/images/portal.png" alt="Portal" class="w-[90%]">
@@ -203,25 +205,56 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import { ref } from 'vue';
 import NavbarMenu from '../components/NavbarMenu.vue'
 import SliderMenu from '../components/SliderMenu.vue'
 import SponsorMenu from '../components/SponsorMenu.vue'
 import FooterMenu from '../components/FooterMenu.vue'
 
+
 export default {
+  methods: {
+    animateSlide() {
+      gsap.from(".slide",{
+          opacity: 0, 
+          x: -200, 
+          duration: 1,
+          delay: 0.2,
+          scrollTrigger: {
+              trigger: "#slides",
+              start: "10% bottom"
+          }
+      });
+      gsap.from(".slide2",{
+          opacity: 0, 
+          x: -200, 
+          duration: 1,
+          delay: 0.2,
+          scrollTrigger: {
+              trigger: "#slides2",
+              start: "10% bottom"
+          }
+      });
+    }
+  },
   components: {
     NavbarMenu,
     SliderMenu,
     SponsorMenu,
     FooterMenu
   },
+  mounted() {
+    gsap.registerPlugin(ScrollTrigger)
+    this.animateSlide()
+  },
   setup() {
     const selectedCategory = ref('Day');
 
     return {
-      selectedCategory
+      selectedCategory,
+      gsap
     }
   }
 }
@@ -428,6 +461,12 @@ export default {
 @media (max-width:500px){
   .btn{
     font-size:10px;
+  }
+
+  .btn-nothing{
+    width: 12rem;
+    display:flex;
+    text-align: center;
   }
 }
 

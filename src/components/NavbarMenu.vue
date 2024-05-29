@@ -16,7 +16,7 @@
                 </ul>
             </div>
             <div id="navbarButton" class="relative hidden pt-4 pb-2 lg:pt-0 lg:pb-0 lg:block lg:absolute lg:right-0">
-                <a class="pb-2 btn buy-ticket">
+                <a href="#buyticket" class="pb-2 btn buy-ticket">
                     Buy Ticket
                 </a>
             </div>

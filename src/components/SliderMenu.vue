@@ -30,11 +30,11 @@
             </div>
         </div>
         <div class="flex justify-center pt-12 mt-12">
-            <button class="flex justify-center -mr-4 transform carousel-control prev">
-                <img src="/images/arrowSquare.png" alt="Arrow" class="w-1/2 rotate-180">
+            <button class="flex justify-center -mr-5 transform carousel-control prev">
+                <img src="/images/arrowSquare.png" alt="Arrow" class="w-1/3 rotate-180">
             </button>
-            <button class="flex justify-center -ml-4 transform carousel-control next">
-                <img src="/images/arrowSquare.png" alt="Arrow" class="w-1/2">
+            <button class="flex justify-center -ml-5 transform carousel-control next">
+                <img src="/images/arrowSquare.png" alt="Arrow" class="w-1/3">
             </button>
         </div>
     </div>
