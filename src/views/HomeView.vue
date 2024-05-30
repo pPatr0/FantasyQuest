@@ -10,9 +10,9 @@
           <NavbarMenu />
             <div class="flex flex-col text-center items-center text-[#FFFFFF] pt-[12rem]">
                 <h1 class="z-50 text-5xl lg:text-8xl">
-                    <span class="text-shadow">Fantasy Quest</span>
+                    <span class="tracking-wide text-shadow">Fantasy Quest</span>
                 </h1>
-                <p class="pt-10 text-2xl lg:pt-20">
+                <p class="pt-10 text-2xl tracking-wider lg:pt-20">
                     Explore fantasy world on your own
                 </p>
                 <div class="flex pt-8 space-x-4">
@@ -33,7 +33,7 @@
     <div class="bg-[#002B59] py-12" id="about">
         <div class="container mx-auto">
             <div class="pb-12 lg:pb-24 lg:pt-16 pt-1/2">
-                <h2 class="flex justify-center text-4xl text-white uppercase">About Quest</h2>
+                <h2 class="flex justify-center text-4xl tracking-wider text-white uppercase">About Quest</h2>
             </div>
             <div class="flex justify-center px-6">
               <div id="slides" class="flex flex-col items-center justify-center px-8 py-8 space-x-0 border-2 border-white rounded max-w-7xl lg:space-x-10 lg:flex-row bg-secondary slide">
@@ -42,7 +42,7 @@
                   </div>
                   <div class="flex justify-center max-w-lg px-6 pt-6 lg:max-w-sm lg:px-0 lg:pt-0">
                       <p class=" text-primary text-md md:text-lg lg:text-xl inter">
-                        Are you ready to enter a magical world where you are a hero on a quest to overcome evil forces and save the world? Welcome to Fantasy Quest Esbjerg. Imagine "Prisoner in the Fortress" with magic, theatre, role-playing, heroes, villains and the battle of good versus evil. This is your journey in Fantasy Quest Esbjerg. In 2024, Fantasy Quest Esbjerg will offer a challenging evening edition and a daytime edition for the whole family during the Fantasy Festival. This event, created in collaboration with youtuber Lakserytteren, is open to everyone.
+                        Are you ready to enter a magical world where you are a hero on a quest to save the world? Welcome to Fantasy Quest Esbjerg. Imagine "Prisoner in the Fortress" with magic, theatre, role-playing, heroes, villains and the battle of good versus evil. This is your journey in Fantasy Quest Esbjerg. In 2024, Fantasy Quest Esbjerg will offer a challenging evening edition and a daytime edition for the whole family during the Fantasy Festival. This event, created in collaboration with youtuber Lakserytteren, is open to everyone.
                       </p>  
                   </div>
               </div>
@@ -73,11 +73,15 @@
               <h2 class="pt-12 text-2xl uppercase md:text-3xl lg:text-3xl">
                 Day quest
               </h2>
+              <p>
+                10.00 - 14.30
+              </p>
               <p class="py-8 inter">
                 <span class="text-3xl font-semibold lg:text-4xl inter">159</span>dkk / group
               </p>
               <p class="text-base lg:text-lg inter">
-                Fantasy Quest Esbjerg is an adventure race that takes place during the Esbjerg Fantasy Festival on 14 September 2024. Participants will embark on a quest full of challenges to be completed on a route inspired by a unique fantasy story created in collaboration with Lakserytteren. <br><br> The event is divided into two segments: the Family Challenge and the Fantasy Challenge. The Daily Quest invites families to participate together. Everyone becomes a hero, with children playing a key role in saving Esbjerg. The challenges are designed for children to complete, but teamwork and skill from all participants is essential. The family version of the quest takes place during the daytime hours of the Festival of Imagination.              </p>
+                Fantasy Quest Esbjerg is an adventure race that takes place during the Esbjerg Fantasy Festival on 14 September 2024. Participants will embark on a quest full of challenges to be completed on a route inspired by a unique fantasy story created in collaboration with Lakserytteren. <br><br> The event is divided into two segments: the Family Challenge and the Fantasy Challenge. The Daily Quest invites families to participate together. Everyone becomes a hero, with children playing a key role in saving Esbjerg. The challenges are designed for children to complete, but teamwork and skill from all participants is essential.
+              </p>
               <a href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3" class="pb-2 my-8 btn-nothing">
                 BUY TICKET
               </a>
@@ -88,6 +92,9 @@
               <h2 class="pt-12 text-2xl uppercase md:text-3xl lg:text-3xl">
                 Night quest
               </h2>
+              <p class="">
+                18.00 - 22.30
+              </p>
               <p class="py-8 inter">
                 <span class="text-3xl font-semibold lg:text-4xl inter">243</span>dkk / group
               </p>
@@ -111,7 +118,7 @@
       <div class="container flex justify-center mx-auto ">
         <div class="bg-[#002B59] border-2 border-white rounded flex lg:flex-row md:flex-row flex-col justify-center text-white lg:max-w-3xl max-w-xs items-center p-8 slide2">
           <div class="space-y-6">
-            <h2 class="text-xl uppercase">
+            <h2 class="text-xl tracking-wider uppercase">
               Visit us
             </h2>
             <p class="max-w-xl inter">
@@ -300,7 +307,7 @@ export default {
     background: #002B59;
     color: #FFFFFF;
     border: solid 2px #FFFFFF;
-
+    letter-spacing: 0.05em;
     text-decoration: none;
     width: 20vh;
     display: flex;
@@ -333,13 +340,14 @@ export default {
     background: #002B59;
     z-index: -1;
     transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    letter-spacing: 0.05em;
   }
   
   .btn-nothing{
     background: #002B59;
     color: #FFFFFF;
     border: solid 2px #FFFFFF;
-
+    letter-spacing: 0.05em;
     text-decoration: none;
     width: 20vh;
     display: flex;
@@ -366,6 +374,7 @@ export default {
     width: 100%;
     left: 0;
     right: unset;
+    letter-spacing: 0.05em;
   }
   .btn:hover {
     box-shadow: 0 0 #ffe00b, 0 0 #151515;
@@ -374,6 +383,7 @@ export default {
 
   .buy-ticket::before{
     background-color: #4EB4D5;
+    letter-spacing: 0.05em;
   }
 
   .buy-ticket:hover{
@@ -387,11 +397,13 @@ export default {
   .btn-second{
   background-color: #4EB4D5;
   color:#002B59;
+  letter-spacing: 0.05em;
 }
 
 .btn-switch{
   background: #002B59;
   color: #FFFFFF;
+  letter-spacing: 0.05em;
 }
 
 @media (max-width: 991.98px) {

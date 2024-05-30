@@ -65,7 +65,7 @@
                 </div>
             </div>
             <hr class="pb-4 mt-6 border-white"/>
-            <span class="block mt-2 text-sm text-center text-white opacity-80">
+            <span class="block mt-2 text-sm tracking-wider text-center text-white opacity-80">
                 © 2024 Fantasy Quest
             </span>
         </div>

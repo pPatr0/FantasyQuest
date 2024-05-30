@@ -1,9 +1,9 @@
 <template>
     <div class="relative py-20 overflow-hidden carousel bg-[#7A4686]">
         <div>
-            <h2 class="pb-12 text-4xl text-center text-white uppercase">Characters</h2>
+            <h2 class="pb-12 text-4xl tracking-wider text-center text-white uppercase">Characters</h2>
          </div>
-        <div class="flex justify-center text-xl text-white carousel-inner">
+        <div class="flex justify-center text-xl tracking-wider text-white carousel-inner">
             <div class="carousel-item w-[300px] h-[300px] lg:mx-10 mx-[20rem] text-center">
                 <h2 class="pb-2">Arkivaren</h2>
                 <img src="/images/arkivaren.png" alt="Arkivaren" class="border-2 border-white rounded">

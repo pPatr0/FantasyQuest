@@ -9,7 +9,7 @@
                 </button>
             </div>
             <div id="navbarContent" class="hidden pt-4 lg:pt-0 lg:block lg:text-white text-primary">
-                <ul class="flex flex-col mt-2 space-x-0 space-y-2 text-lg text-center lg:text-xl lg:space-y-0 lg:space-x-12 lg:flex-row">
+                <ul class="flex flex-col mt-2 space-x-0 space-y-2 text-lg tracking-wider text-center lg:text-xl lg:space-y-0 lg:space-x-12 lg:flex-row">
                     <a href="#">Home</a>
                     <a href="#about">About</a>
                     <a href="#contact">Contact</a>
